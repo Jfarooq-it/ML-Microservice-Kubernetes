@@ -1,0 +1,8 @@
+<paste log output from Kubernetes-mediated prediction, here>
+Error from server (AlreadyExists): deployments.apps "udacity-project4" already exists
+NAME                                READY   STATUS    RESTARTS   AGE
+udacity-project-75f49994b7-5mf7f    1/1     Running   0          12m
+udacity-project4-6b987ff4f5-2jtb9   1/1     Running   0          2m4s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+
