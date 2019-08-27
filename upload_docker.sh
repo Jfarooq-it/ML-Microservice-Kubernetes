@@ -8,11 +8,12 @@
 # dockerpath=<your docker ID/path>
 dockerpath=jc02/udacity-project4
 
-# Step 2:  
+# Step 2:
 # Authenticate & tag
-#echo "Docker ID and Image: $dockerpath"
-docker tag fd05139271a6 jc02/udacity-project4
+echo "Docker ID and Image: $dockerpath"
+echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+docker tag $dockerpath:latest $dockerpath
 
 # Step 3:
 # Push image to a docker repository
-docker push jc02/udacity-project4
+docker push $dockerpath
